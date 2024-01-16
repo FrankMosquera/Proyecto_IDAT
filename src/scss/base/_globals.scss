@@ -1,0 +1,16 @@
+@use 'variables' as v;
+
+html{
+    font-size: 90%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
