@@ -20,7 +20,7 @@ function cargarEventListeners() {
 function comprarElemento(e){
     e.preventDefault();
     if(e.target.classList.contains('agregar-carrito')){
-        const elemento = e.target.parentElement.paraElement;
+        const elemento = e.target.parentElement;
         leerDatosElemento(elemento);
     }
 }
@@ -28,7 +28,7 @@ function comprarElemento(e){
 function leerDatosElemento(elemento){
     const infoElemento = {
         imagen: elemento.querySelector('img').src,
-        titulo: elemento.querySelector('.agregar-carrito').textContent,
+        titulo: elemento.querySelector('.nom-pro').textContent,
         precio:elemento.querySelector('.precio').textContent,
         id: elemento.querySelector('button').getAttribute('data-id')
     }
@@ -39,7 +39,7 @@ function insertarCarrito(elemento){
     const row = document.createElement('tr');
     row.innerHTML = `
         <td>
-            <img src="${elemento.imagen}" width=100>
+            <img src="${elemento.imagen}" width=50>
         </td>
 
         <td>
@@ -62,8 +62,8 @@ function eliminarElemento(e){
     let elemento,
         elementoID;
     if(e.target.classList.contains('borrar')){
-        e.target.paraElement.paraElement.remove();
-        elemento = e.target.parentElement.paraElement;
+        e.target.parentElement.parentElement.remove();
+        elemento = e.target.parentElement.parentElement;
         elementoID = elemento.querySelector('a').getAttribute('data-id');
     }
 }

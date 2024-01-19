@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="build/css/app.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
             <a class="nav-link active" aria-current="page" href="index.html">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Nosótros</a>
+            <a class="nav-link active" aria-current="page" href="#nosotros">Nosótros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="contactanos.html" target="_blank">Contáctanos</a>
@@ -54,7 +54,7 @@
                   </thead>
                   <tbody></tbody>
                 </table>
-                <a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
+                <a href="#" id="vaciar-carrito" class="btn-3 limpiar">Vaciar carrito</a>
               </div>
             </li>
           </ul>
@@ -81,75 +81,75 @@
           <img src="img/arduino-1.jpg" alt="imagen arduino">
           <p class="nom-pro">Arduino UNO Chip CH340</p>
           <p class="precio">S/ 28.00</p>
-          <button class="agregar-carrito btn-3" data-id="1"><span>Añadir</span></button>
+          <button class="agregar-carrito btn-3" data-id="1">Añadir</button>
         </div>
         <div class=" row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/arduino-2.jpg" alt="imagen arduino">
           <p class="nom-pro">Arduino Pro Mini</p>
           <p class="precio">S/ 16.00</p>
-          <button class="agregar-carrito btn-3" data-id="2"><span>Añadir</span></button>
+          <button class="agregar-carrito btn-3" data-id="2">Añadir</button>
         </div>
         <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/arduino-3.jpg" alt="imagen arduino">
           <p class="nom-pro">Arduino Pro Micro</p>
           <p class="precio">S/ 28.00</p>
-          <button class="agregar-carrito btn-3" data-id="3"><span>Añadir</span></button>
+          <button class="agregar-carrito btn-3" data-id="3">Añadir</button>
         </div>
         <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/arduino-4.jpg" alt="imagen arduino">
           <p class="nom-pro">Arduino UNO Chip Original</p>
           <p class="precio">S/ 54.00</p>
-          <button class="agregar-carrito btn-3" data-id="4"><span>Añadir</span></button>
+          <button class="agregar-carrito btn-3" data-id="4">Añadir</button>
         </div>
         <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/arduino-5.jpg" alt="imagen arduino">
           <p class="nom-pro">Arduino TTL PL2303HX</p>
           <p class="precio">S/ 5.00</p>
-          <button class="agregar-carrito btn-3" data-id="5"><span>Añadir</span></button>
+          <button class="agregar-carrito btn-3" data-id="5">Añadir</button>
         </div>
   </section>
 
   <hr>
 
-  <section>
+  <section class="productos container" id="lista-2">
     <div class="container">
       <div class="row">
         <p class="tittle">ESP32</p>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12 " id="lista-2">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12 ">
           <img src="img/esp-1.jpg" alt="imagen esp32">
           <p class="nom-pro">Wroom Socket</p>
-          <p class="Precio">S/ 35.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 35.00</p>
+          <button class="agregar-carrito btn-3" data-id="6">Añadir</button>
         </div>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12" id="lista-2">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/esp-2.jpg" alt="imagen esp32">
           <p class="nom-pro">Wrover Socket</p>
-          <p class="Precio">S/ 35.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 35.00</p>
+          <button class="agregar-carrito btn-3" data-id="7">Añadir</button>
         </div>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12" id="lista-2">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/esp-3.jpg" alt="imagen esp32">
           <p class="nom-pro">ESP 32 - Wrover(-B 16MB)</p>
-          <p class="Precio">S/ 30.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 30.00</p>
+          <button class="agregar-carrito btn-3" data-id="8">Añadir</button>
         </div>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12" id="lista-2">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/esp-4.jpg" alt="imagen esp32">
           <p class="nom-pro">ESP32 Wroom 38 - Pines</p>
-          <p class="Precio">S/ 34.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 34.00</p>
+          <button class="agregar-carrito btn-3" data-id="9">Añadir</button>
         </div>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12" id="lista-2">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/esp-5.webp" alt="imagen esp32">
           <p class="nom-pro">Wroom - 32D(16MB)</p>
-          <p class="Precio">S/ 22.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 22.00</p>
+          <button class="agregar-carrito btn-3" data-id="10">Añadir</button>
         </div>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12" id="lista-2">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/esp-6.jpg" alt="imagen esp32">
           <p class="nom-pro">ESP32 Cam Wrover</p>
-          <p class="Precio">S/ 52.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 52.00</p>
+          <button class="agregar-carrito btn-3" data-id="11">Añadir</button>
         </div>
       </div>
     </div>
@@ -157,45 +157,45 @@
 
   <hr>
 
-  <section>
+  <section class="productos container" id="lista-3">
     <div class="container">
       <div class="row">
         <p class="tittle">Pantallas</p>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12" id="lista-3">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/pantalla-1.jpg" alt="imagen pantalla">
           <p class="nom-pro">Pantalla Oled 0,91¨ Blue I2C(SSD1306)</p>
-          <p class="Precio">S/ 9.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 9.00</p>
+          <button class="agregar-carrito btn-3" data-id="12">Añadir</button>
         </div>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12" id="lista-3">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/ptantalla-2.jpg" alt="imagen pantalla">
           <p class="nom-pro">Pantalla Oled 1,54” Blue I2C(SSD1306-SSD1309)</p>
-          <p class="Precio">S/ 32.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 32.00</p>
+          <button class="agregar-carrito btn-3" data-id="13">Añadir</button>
         </div>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12" id="lista-3">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/pantalla-3.jpg" alt="imagen pantalla">
           <p class="nom-pro">Pantalla LCD 1602 Blue + I2C</p>
-          <p class="Precio">S/ 16.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 16.00</p>
+          <button class="agregar-carrito btn-3" data-id="14">Añadir</button>
         </div>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12" id="lista-3">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/pantalla-4.jpg" alt="imagen pantalla">
           <p class="nom-pro">Pantalla LCD 2004 Blue + I2C</p>
-          <p class="Precio">S/ 30.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 30.00</p>
+          <button class="agregar-carrito btn-3" data-id="15">Añadir</button>
         </div>
-        <div class="row-img col-lg-4 col-md-6 col-sm-12" id="lista-3">
+        <div class="row-img col-lg-4 col-md-6 col-sm-12">
           <img src="img/pantalla-5.jpg" alt="imagen pantalla">
           <p class="nom-pro">Pantalla LCD TFT Táctil SPI(3,5¨ ILI9488) + Lápiz</p>
-          <p class="Precio">S/ 70.00</p>
-          <button><span>Añadir</span></button>
+          <p class="precio">S/ 70.00</p>
+          <button class="agregar-carrito btn-3" data-id="16">Añadir</button>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="container nosotros shadow">
+  <div class="container nosotros shadow" id="nosotros">
     <h2>Nosotros</h2>
     <p>Somos una empresa del rubro de la electrónica. Tenemos como visión ser una empresa líder en la venta y
       distribución de sistemas embebidos.

@@ -341,10 +341,14 @@ ul, li {
 .submenu #carrito {
   display: none;
 }
+.submenu th {
+  font-weight: bold;
+  font-size: 15px;
+}
 .submenu table {
   width: 100%;
 }
-.submenu a {
+.submenu a, .submenu a.limpiar {
   text-decoration: none;
   color: white;
 }
@@ -360,9 +364,13 @@ ul, li {
   top: 100%;
   z-index: 1;
   background-color: rgba(78, 75, 80, 0.462745098);
-  min-width: 400px;
+  min-width: 500px;
   padding: 20px;
-  min-width: 400px;
+}
+@media (max-width: 480px) {
+  .submenu:hover #carrito {
+    min-width: 400px;
+  }
 }
 
 section.banner {
@@ -386,6 +394,11 @@ section.banner h1 {
   color: white;
   font-size: 60px;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 480px) {
+  section.banner h1 {
+    font-size: 40px;
+  }
 }
 section.banner p {
   color: white;
@@ -438,13 +451,13 @@ div.row button {
   transition: 0.3s;
   font-weight: 500;
 }
-div.row button span {
+div.row button {
   background-color: rgb(237, 237, 212);
   padding: 3px 24px;
   border-radius: 6px;
   transition: 0.3s;
 }
-div.row button:hover span {
+div.row button:hover {
   background: none;
 }
 div.row button:active {
@@ -453,6 +466,8 @@ div.row button:active {
 
 div.container.nosotros {
   background-color: azure;
+  padding: 20px;
+  margin-top: 0;
 }
 div.container.nosotros h2 {
   padding: 50px;
@@ -474,9 +489,15 @@ div.container.nosotros img.img-nosotros {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 500px;
+  height: 100%;
   padding: 20px;
   border-radius: 30px;
+}
+@media (max-width: 480px) {
+  div.container.nosotros img.img-nosotros {
+    width: 400px;
+    height: 300px;
+  }
 }
 
 div.shadow {
@@ -491,6 +512,12 @@ footer {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 480px) {
+  footer {
+    display: block;
+    justify-content: center;
+  }
 }
 footer a {
   text-decoration: none;
@@ -508,6 +535,7 @@ footer p {
 section.banner-contactanos {
   background-image: url(../../../img/arduino-fondo.jpg);
   margin-top: 20px;
+  padding: 30px;
 }
 section.banner-contactanos h1 {
   color: pink;

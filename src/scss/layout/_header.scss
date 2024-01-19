@@ -24,10 +24,14 @@ li.nav-item{
     #carrito{
         display: none;
     }
+    th{
+        font-weight: bold;
+        font-size: 15px;
+    }
     table{
         width: 100%;
     }
-    a{
+    a, a.limpiar{
         text-decoration: none;
         color: white;
     }
@@ -44,9 +48,12 @@ li.nav-item{
     top: 100%;
     z-index: 1;
     background-color: #4E4B5076;
-    min-width: 400px;
+    min-width: 500px;
     padding: 20px;
-    min-width: 400px;
+    @include m.phone{
+        min-width: 400px;
+    }
+    
 }
 
 section.banner{
@@ -70,6 +77,9 @@ section.banner{
         color: white;
         font-size: 60px;
         font-family: 'Poppins', sans-serif;
+        @include m.phone{
+            font-size: 40px;
+        }
     }
     p{
         color: white;
@@ -126,14 +136,14 @@ div.row{
         font-weight: 500;
     }
 
-    button span{
+    button{
         background-color: rgb(237, 237, 212);
         padding: 3px 24px;
         border-radius: 6px;
         transition: .3s;
     }
 
-    button:hover span{
+    button:hover{
         background: none;
     }
 
@@ -145,6 +155,8 @@ div.row{
 
 div.container.nosotros{
     background-color: azure;
+    padding: 20px;
+    margin-top: 0;
     h2{
         padding: 50px;
         margin-bottom: 0;
@@ -165,9 +177,13 @@ div.container.nosotros{
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 500px;
+        height: 100%;
         padding: 20px;
         border-radius: 30px;
+        @include m.phone{
+            width: 400px;
+            height: 300px;
+        }
     }
 }
 
@@ -183,6 +199,10 @@ footer{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    @include m.phone{
+        display: block;
+        justify-content: center;
+    }
     a{
         text-decoration: none;
         color: black;
